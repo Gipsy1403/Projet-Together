@@ -3,6 +3,35 @@ footer{
     background-color: black;
 }
 
-.link a{
-    color: gray;
+.logo{
+    background-image: url(../image/img/Logo-white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10vh;
 }
+.title{
+    color : white;
+}
+.items2{
+    display: flex;
+    justify-content: flex-end;
+    a{
+        padding: 0 1.5rem;
+        color: grey;
+    }
+    a:hover{
+        color: white;  
+    }
+}
+
+.foot_bar{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+   
+}
+.link a{
+    color:white;
+    margin: 0 1rem;
+}
+

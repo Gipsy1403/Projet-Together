@@ -1,28 +1,88 @@
+@use "../abstract/mixin"
+
+// ***************************LEARN************************
 #learn{   
     background-color:#e7816b;
     color: white;
-    width: 80%;
     border-radius: 10px;
     box-shadow: 1px 1px 3px gray;
     border: 1px solid #ebac9e;
-
+   
     display: flex;
     margin: auto;
-}  
-#learn .img{
-    background-image: url(../../image/img/wave.svg);
+    margin-bottom: 4rem;
+    .img{
+        background-image: url(../image/img/mockup-travel-iphone.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 60vh;
+        width: 40%;
+        margin-top:100px ;
+    }
+}
+.content_learn{
+    width: 70%;
+    align-content: center;
+    padding: 3rem;
+    span{
+        display: block;
+        line-height: 1.2;
+    }
+    p{
+        font-size: 0.8em;
+        margin-bottom: 20px;
+    }
+    h1{
+        margin-bottom: 1rem;
+    }
+}
+// *********************SERVICES**************************
+#services>div{
+    display: flex;
+    flex-direction: column;
+}
+.left .encart{
+   background-position: center;
+
+}
+.img1{
+    background-image: url(../image/img/homme-assis-batiment.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 50vh;
+    
 }
 
-#services{
-    display: flex;
-    justify-content: center;
-
+.img2 .pass{
+    background-image: url(../image/img/passport.jpg);
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    width: 50vh;
+}
+.img2 .montg{
+    background-image: url(../image/img/montgolfiere.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    width: 50vh;
+}
+.encart {
+    text-align: center;
+    color: #e7816b;
+}
+.titleserv{
+    text-transform:uppercase;
+   
 }
 // **************************FEATURES************************
 
 #features h2{
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 50px;
 }
 .cards{
     display: flex;
@@ -46,8 +106,10 @@
     padding-bottom: 1rem;
 }
 .wave{
-    background-image: url(../../image/img/wave.svg);
+    background-image: url(../image/img/wave.svg);
     width: 100%;
+    background-repeat: repeat;
+ 
 }
 .getin{
     background-color:#e7816b;
@@ -56,9 +118,15 @@
     border-radius: 10px 10px 0px 0px;
     box-shadow: 1px 1px 3px gray;
     border: 1px solid #ebac9e;
+    padding: 3rem 2rem;
+    display: flex;
+    p{
+        font-size: 0.8em;
+    }
+
 }
-// .btn {
-//     @include btn;
-// }
+.btn {
+    @include buttom;
+}
 
 
