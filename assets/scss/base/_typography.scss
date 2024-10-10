@@ -1,0 +1,10 @@
+@use "../abstract/variable" as v;
+
+@font-face {
+    font-family:"latoregular";
+    src: url(../font/Lato-Regular.ttf);
+}
+
+body{
+    font-family: "latoregular";
+}

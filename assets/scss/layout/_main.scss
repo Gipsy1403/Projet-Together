@@ -1,0 +1,64 @@
+#learn{   
+    background-color:#e7816b;
+    color: white;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px gray;
+    border: 1px solid #ebac9e;
+
+    display: flex;
+    margin: auto;
+}  
+#learn .img{
+    background-image: url(../../image/img/wave.svg);
+}
+
+#services{
+    display: flex;
+    justify-content: center;
+
+}
+// **************************FEATURES************************
+
+#features h2{
+    display: flex;
+    justify-content: flex-end;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.card_content{
+    padding: 0 5rem;
+    text-align: center;
+}
+.card_content i{
+    color: #e7816b;
+    font-size: 2em;
+    padding-bottom: 1rem;
+}
+.card_content h3{
+    padding-bottom: 1rem;
+}
+.card_content p{
+    font-size: 0.7em;
+    padding-bottom: 1rem;
+}
+.wave{
+    background-image: url(../../image/img/wave.svg);
+    width: 100%;
+}
+.getin{
+    background-color:#e7816b;
+    color: white;
+    width: 90%;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 1px 1px 3px gray;
+    border: 1px solid #ebac9e;
+}
+// .btn {
+//     @include btn;
+// }
+
+
