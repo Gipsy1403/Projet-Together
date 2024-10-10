@@ -1,18 +1,25 @@
 footer{
     color: grey;
     background-color: black;
+    padding-top: 300px;
+    position: relative;
+    z-index: 2;
+  
 }
+
 
 .logo{
     background-image: url(../image/img/Logo-white.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: flex-start;
     height: 10vh;
+  
 }
 .title{
     color : white;
 }
-.items2{
+.items2 ul{
     display: flex;
     justify-content: flex-end;
     a{
