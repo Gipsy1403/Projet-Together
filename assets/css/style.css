@@ -1,18 +1,229 @@
-/* Error: expected ";".
- *   ,
- * 3 | // ***************************LEARN************************
- *   |                                                            ^
- *   '
- *   scss\layout\_main.scss 3:60  @use
- *   scss\style.scss 5:1          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a   \2577 \a 3 \2502  // ***************************LEARN************************\d\a   \2502                                                             ^\a   \2575 \a   scss\\layout\\_main.scss 3:60  @use\a   scss\\style.scss 5:1          root stylesheet';
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
+
+body {
+  padding: 0 4rem;
+}
+
+@font-face {
+  font-family: "latoregular";
+  src: url(../font/Lato-Regular.ttf);
+}
+body {
+  font-family: "latoregular";
+}
+
+#nav_bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.items a {
+  padding: 0 1.5rem;
+  color: grey;
+}
+
+.items a:hover {
+  color: black;
+}
+
+.fa-bars {
+  display: none;
+}
+
+#nav-bar .picture {
+  background-image: url(../../image/img/Logo.png);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+#learn {
+  background-color: #e7816b;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px gray;
+  border: 1px solid #ebac9e;
+  display: flex;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+#learn .img {
+  background-image: url(../image/img/mockup-travel-iphone.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 40%;
+  margin-top: 100px;
+}
+
+.content_learn {
+  width: 70%;
+  align-content: center;
+  padding: 3rem;
+}
+.content_learn span {
+  display: block;
+  line-height: 1.2;
+}
+.content_learn p {
+  font-size: 0.8em;
+  margin-bottom: 20px;
+}
+.content_learn h1 {
+  margin-bottom: 1rem;
+}
+
+#services {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+#services article {
+  display: flex;
+}
+#services > div {
+  width: 400px;
+}
+
+.encart {
+  text-align: center;
+  color: rgb(132, 24, 24);
+  display: flex;
+  align-items: center;
+}
+
+.left .encart {
+  background-position: center;
+}
+
+.img1 {
+  background-image: url(../image/img/homme-assis-batiment.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 50vh;
+}
+
+.img2 .pass {
+  background-image: url(../image/img/passport.jpg);
+  height: 25vh;
+  background-size: cover;
+  background-position: center;
+  width: 50vh;
+}
+
+.img2 .montg {
+  background-image: url(../image/img/montgolfiere.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  width: 50vh;
+}
+
+.titleserv {
+  text-transform: uppercase;
+}
+
+#features h2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card_content {
+  padding: 0 5rem;
+  text-align: center;
+}
+
+.card_content i {
+  color: #e7816b;
+  font-size: 2em;
+  padding-bottom: 1rem;
+}
+
+.card_content h3 {
+  padding-bottom: 1rem;
+}
+
+.card_content p {
+  font-size: 0.7em;
+  padding-bottom: 1rem;
+}
+
+.wave {
+  background-image: url(../image/img/wave.svg);
+  width: 100%;
+  background-repeat: repeat;
+}
+
+.getin {
+  background-color: #e7816b;
+  color: white;
+  width: 90%;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 1px 1px 3px gray;
+  border: 1px solid #ebac9e;
+  padding: 3rem 2rem;
+  display: flex;
+}
+.getin p {
+  font-size: 0.8em;
+}
+
+footer {
+  color: grey;
+  background-color: black;
+}
+
+.logo {
+  background-image: url(../image/img/Logo-white.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 10vh;
+}
+
+.title {
+  color: white;
+}
+
+.items2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.items2 a {
+  padding: 0 1.5rem;
+  color: grey;
+}
+.items2 a:hover {
+  color: white;
+}
+
+.foot_bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+}
+
+.link a {
+  color: white;
+  margin: 0 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
