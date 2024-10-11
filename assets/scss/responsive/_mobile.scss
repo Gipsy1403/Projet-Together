@@ -1,0 +1,36 @@
+@media screen and (max-width:700px) {
+   #learn {
+
+    .img{
+        background-image: none;
+        display: none;
+       }
+   }
+   .content_learn{
+       margin:20px;
+       width: 100%;
+   }
+
+   #services{
+    flex-wrap: wrap;
+   
+   }
+   .left {
+    height: 63vh;
+   }
+   .cards{
+    flex-wrap: wrap;
+    // position: static;
+
+   }
+   #wave{
+    background-image: none;
+   }
+   .getin{
+    margin-top: 0;
+   }
+
+   footer{
+    position: static;
+   }
+    }

@@ -47,7 +47,6 @@ body {
   box-shadow: 1px 1px 3px gray;
   border: 1px solid #ebac9e;
   display: flex;
-  margin: auto;
   position: relative;
   padding: 80px 0;
   overflow: hidden;
@@ -67,9 +66,9 @@ body {
 }
 
 .content_learn {
-  width: 70%;
+  width: 50%;
   align-content: center;
-  padding: 3rem;
+  margin: 3rem;
 }
 .content_learn span {
   display: block;
@@ -77,7 +76,7 @@ body {
 }
 .content_learn p {
   font-size: 0.8em;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .content_learn h1 {
   margin-bottom: 1rem;
@@ -289,6 +288,99 @@ hr {
 .link a {
   color: white;
   margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  #learn {
+    overflow: none;
+    justify-content: center;
+    align-items: center;
+  }
+  #learn .img {
+    position: static;
+    margin-top: 0;
+  }
+  .card_content {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #learn {
+    padding: 50px 0;
+    justify-content: center;
+  }
+  #learn .img {
+    margin-right: 30px;
+  }
+  .fa-bars {
+    display: block;
+    font-size: 2em;
+    border: 1px solid grey;
+    padding: 10px;
+    color: gray;
+    margin: 30px;
+  }
+  .items {
+    display: none;
+  }
+  #nav_bar:hover .items {
+    display: block;
+    position: absolute;
+    text-align: center;
+    border-radius: 10px;
+    top: 2rem;
+    right: 50px;
+    background-color: #f5cdc4;
+    color: black;
+    z-index: 1;
+    margin-top: 50px;
+  }
+  .items li {
+    padding: 0.5rem;
+  }
+  .left {
+    height: 104vh;
+  }
+  .deux {
+    height: 50vh;
+  }
+  .trois {
+    height: 50vh;
+  }
+  .text .one {
+    padding: 30%;
+  }
+  .getin {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #learn .img {
+    background-image: none;
+    display: none;
+  }
+  .content_learn {
+    margin: 20px;
+    width: 100%;
+  }
+  #services {
+    flex-wrap: wrap;
+  }
+  .left {
+    height: 63vh;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+  #wave {
+    background-image: none;
+  }
+  .getin {
+    margin-top: 0;
+  }
+  footer {
+    position: static;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
