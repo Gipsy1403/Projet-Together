@@ -5,10 +5,6 @@
   text-decoration: none;
 }
 
-body {
-  padding: 0 4rem;
-}
-
 @font-face {
   font-family: "latoregular";
   src: url(../font/Lato-Regular.ttf);
@@ -19,8 +15,9 @@ body {
 
 #nav_bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 4rem;
 }
 #nav_bar img {
   width: 20%;
@@ -55,6 +52,7 @@ body {
   padding: 80px 0;
   overflow: hidden;
   margin-bottom: 50px;
+  margin: 0 4rem;
 }
 #learn .img {
   background-image: url(../image/img/mockup-travel-iphone.png);
@@ -85,8 +83,14 @@ body {
   margin-bottom: 1rem;
 }
 
+.titleserv {
+  margin: 0 4rem;
+  margin-top: 2rem;
+}
+
 #services {
   display: flex;
+  margin: 0 4rem;
 }
 #services article {
   display: flex;
@@ -150,13 +154,12 @@ body {
 #features {
   position: absolute;
   z-index: 1;
+  margin: 0 4rem;
 }
 
 #features h2 {
   text-align: end;
-  padding-right: 4.5rem;
-  margin-bottom: 50px;
-  padding-top: 50px;
+  margin: 2rem 0;
 }
 
 .cards {
@@ -197,8 +200,8 @@ body {
 }
 
 .getinabove {
-  width: 70%;
   margin: auto;
+  margin: 0 4rem;
 }
 
 .getin {
@@ -245,13 +248,13 @@ footer {
   padding-top: 150px;
   position: absolute;
   z-index: -2;
-  width: 90%;
 }
 
 .menu_nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 4rem;
 }
 .menu_nav img {
   width: 20%;
@@ -268,19 +271,24 @@ footer {
   color: white;
 }
 
+hr {
+  margin: 0 4rem;
+}
+
 .title {
   color: white;
 }
 
 .foot_bar {
   display: flex;
-  justify-content: space-around;
-  padding: 1.5rem 0;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin: 0 4rem;
 }
 
 .link a {
   color: white;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
