@@ -21,6 +21,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
+#nav_bar img {
+  width: 20%;
+  height: 10%;
+}
 
 .items {
   display: flex;
@@ -40,22 +44,15 @@ body {
   display: none;
 }
 
-#nav-bar .picture {
-  background-image: url(../../image/img/Logo.png);
-  background-size: cover;
-  background-position: center;
-  height: 40vh;
-}
-
 #learn {
   background-color: #e7816b;
   color: white;
   border-radius: 10px;
   box-shadow: 1px 1px 3px gray;
   border: 1px solid #ebac9e;
+  position: relative;
   display: flex;
   margin: auto;
-  margin-bottom: 4rem;
 }
 #learn .img {
   background-image: url(../image/img/mockup-travel-iphone.png);
@@ -203,8 +200,9 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  z-index: 3;
+  z-index: 2;
   left: 7%;
+  margin-bottom: 100px;
 }
 .getin p {
   font-size: 0.8em;
@@ -217,16 +215,13 @@ footer {
   color: grey;
   background-color: black;
   padding-top: 300px;
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  z-index: -2;
+  width: 90%;
 }
 
-.logo {
-  background-image: url(../image/img/Logo-white.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: flex-start;
-  height: 10vh;
+.menu_dropdown img {
+  width: 20%;
 }
 
 .title {

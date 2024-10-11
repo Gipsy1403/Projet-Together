@@ -2,19 +2,13 @@ footer{
     color: grey;
     background-color: black;
     padding-top: 300px;
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    z-index: -2;
+    width: 90%;
   
 }
-
-
-.logo{
-    background-image: url(../image/img/Logo-white.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: flex-start;
-    height: 10vh;
-  
+.menu_dropdown img{
+    width: 20%;
 }
 .title{
     color : white;

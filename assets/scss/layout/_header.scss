@@ -1,6 +1,10 @@
 #nav_bar{
     display: flex;
     justify-content: space-between;
+    img{
+        width: 20%;
+        height: 10%;
+    }
 }
 
 .items{
@@ -18,10 +22,10 @@
     display: none;
 }
 
-#nav-bar .picture{
-    background-image: url(../../image/img/Logo.png);
-    background-size: cover;
-    background-position: center;
-    height: 40vh;
-}
+// #nav-bar .picture{
+//     background-image: url(../../image/img/Logo.png);
+//     background-size: cover;
+//     background-position: center;
+//     height: 40vh;
+// }
 

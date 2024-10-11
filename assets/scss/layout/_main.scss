@@ -6,10 +6,11 @@
     border-radius: 10px;
     box-shadow: 1px 1px 3px gray;
     border: 1px solid #ebac9e;
-   
+    position: relative;
     display: flex;
     margin: auto;
-    margin-bottom: 4rem;
+    // padding: 100px 0;
+ 
     .img{
         background-image: url(../image/img/mockup-travel-iphone.png);
         background-size: contain;
@@ -17,7 +18,11 @@
         background-repeat: no-repeat;
         height: 60vh;
         width: 40%;
-        margin-top:100px ;
+        // margin-top:100px ;
+        // position: absolute;
+        // overflow: hidden ;
+        margin-top: 100px;
+        
     }
 }
 .content_learn{
@@ -150,9 +155,10 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     left: 7%;
     // top: 50%;
+    margin-bottom: 100px;
  
    
     p{
