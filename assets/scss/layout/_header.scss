@@ -1,6 +1,7 @@
 #nav_bar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     img{
         width: 20%;
         height: 10%;
@@ -10,22 +11,16 @@
 .items{
     display: flex;
     padding: 2rem 0;
+    a{
+        padding: 0 1.5rem;
+        color: grey;
+    }
+    a:hover{
+        color: black;
+    }
 }
-.items a{
-    padding: 0 1.5rem;
-    color: grey;
-}
-.items a:hover{
-    color: black;
-}
+
 .fa-bars{
     display: none;
 }
-
-// #nav-bar .picture{
-//     background-image: url(../../image/img/Logo.png);
-//     background-size: cover;
-//     background-position: center;
-//     height: 40vh;
-// }
 
