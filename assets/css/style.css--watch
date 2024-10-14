@@ -151,22 +151,20 @@ body {
 }
 
 #features {
-  background-image: url(../image/img/wave.svg);
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
-  padding-bottom: 100px;
+  position: absolute;
+  z-index: 1;
+  margin: 0 4rem;
 }
 
 #features h2 {
   text-align: end;
-  margin: 2rem 4rem;
+  margin: 2rem 0;
 }
 
 .cards {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .card_content {
@@ -189,6 +187,22 @@ body {
   padding-bottom: 1rem;
 }
 
+#wave {
+  background-image: url(../image/img/wave.svg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  padding-bottom: 100px;
+}
+
+.getinabove {
+  margin: auto;
+  margin: 0 4rem;
+}
+
 .getin {
   background-color: #e7816b;
   color: white;
@@ -197,11 +211,10 @@ body {
   border: 1px solid #ebac9e;
   padding: 2rem 2rem;
   display: flex;
-  position: absolute;
-  margin: 4rem;
+  margin-top: 50px;
 }
 .getin .paraf {
-  padding-right: 2rem;
+  width: 70%;
 }
 .getin .btn {
   margin: auto;
@@ -219,8 +232,7 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
   box-shadow: 2px 2px 10px black;
-  padding: 1rem 2rem;
-  text-align: center;
+  padding: 1rem 20rem;
   transition: all 0.1s linear;
 }
 .btn:active {
@@ -233,8 +245,8 @@ footer {
   color: grey;
   background-color: black;
   padding-top: 150px;
-  position: relative;
-  z-index: -1;
+  position: absolute;
+  z-index: -2;
 }
 
 .menu_nav {
@@ -291,19 +303,6 @@ hr {
   .card_content {
     padding: 20px;
   }
-  .getin .btn {
-    display: inline-block;
-    padding: 0.5rem;
-  }
-}
-@media screen and (max-width: 1100px) {
-  footer {
-    padding-top: 200px;
-    font-size: 0.8em;
-  }
-  .foot_bar {
-    font-size: 0.8em;
-  }
 }
 @media screen and (max-width: 900px) {
   #learn {
@@ -351,24 +350,11 @@ hr {
   .text .one {
     padding: 30%;
   }
-  .items2 {
-    font-size: 0.8em;
+  .getin {
+    margin-top: 60px;
   }
-}
-@media screen and (max-width: 800px) {
-  footer {
-    padding-top: 250px;
-  }
-  .items2 a {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 0.5rem;
-  }
-  .getin .paraf p {
-    font-size: 0.6em;
-  }
-  .getin .btn {
-    font-size: 0.8em;
+  .getin .paraf {
+    width: 50%;
   }
 }
 @media screen and (max-width: 700px) {
@@ -389,91 +375,15 @@ hr {
   .cards {
     flex-wrap: wrap;
   }
-  .getin {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .getin .btn {
-    margin-top: 20px;
-  }
-  #features {
+  #wave {
     background-image: none;
   }
-  .menu_nav {
-    flex-direction: column;
-  }
-  .menu_nav img {
-    width: 30%;
-  }
-  .items2 {
-    flex-direction: column;
-    padding: 1rem 0;
-    align-items: center;
-  }
-  .items2 a {
-    padding: 0.3rem 0;
+  .getin {
+    margin-top: 0;
   }
   footer {
-    margin-top: 350px;
-  }
-  .foot_bar {
-    font-size: 0.6em;
-  }
-  .link a {
-    margin: 0 0.2rem;
-  }
-}
-.foot_bar {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-.contact {
-  padding: 1rem 0;
-}
-
-.link a {
-  font-size: 1.5em;
-  padding: 0 0.2rem;
-}
-
-@media screen and (max-width: 570px) {
-  .getin span {
-    display: inline;
-  }
-}
-.menu_nav img {
-  width: 30%;
-}
-
-@media screen and (max-width: 490px) {
-  .getin {
-    top: 2680px;
-  }
-}
-@media screen and (max-width: 455px) {
-  .getin {
-    top: 2700px;
-  }
-  #features {
-    padding-bottom: 200px;
-  }
-  #learn .btn {
-    padding: 0;
-  }
-}
-@media screen and (max-width: 430px) {
-  .getin {
-    top: 2750px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .getin {
-    top: 2850px;
+    position: static;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css--watch.map */

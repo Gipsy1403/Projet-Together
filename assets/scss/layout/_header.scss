@@ -1,3 +1,5 @@
+@use "../abstract/mixin" as m;
+
 #nav_bar{
     display: flex;
     justify-content: space-between;

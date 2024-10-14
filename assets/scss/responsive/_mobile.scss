@@ -1,3 +1,5 @@
+// @use "../abstract/mixin" as m;
+
 @media screen and (max-width:700px) {
    #learn {
 
@@ -13,24 +15,101 @@
 
    #services{
     flex-wrap: wrap;
-   
    }
    .left {
     height: 63vh;
    }
    .cards{
     flex-wrap: wrap;
-    // position: static;
-
-   }
-   #wave{
-    background-image: none;
    }
    .getin{
-    margin-top: 0;
-   }
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
-   footer{
-    position: static;
+    .btn{
+        margin-top: 20px;
+    }
    }
+   #features{
+    background-image: none;
+   }
+   .menu_nav{
+    flex-direction: column;
+        img{
+            width: 30%;
+        }
+   }
+   .items2{
+    flex-direction: column;
+    padding: 1rem 0;
+    align-items: center;
+        a{
+            padding: 0.3rem 0;
+    }
+   }
+   footer{
+    margin-top: 350px;
+   }
+   .foot_bar{
+    font-size: 0.6em;
+   }
+   .link a{
+        margin: 0 0.2rem;
+   }
+    }
+    .foot_bar{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .contact{
+        padding: 1rem 0;
+    }
+    .link a{
+        font-size: 1.5em;
+        padding: 0 0.2rem;
+    }
+
+    @media screen and (max-width:570px) {
+        .getin span{
+            display: inline;      
+    }
+
+    }
+    .menu_nav img{
+        width: 30%;     
+       }
+
+    @media screen and (max-width:490px) {
+        .getin{
+            top:2680px;
+        }
+
+    }
+
+    @media screen and (max-width:455px) {
+        .getin{
+            top:2700px;
+        }
+        #features{
+            padding-bottom: 200px;
+        }
+        #learn .btn{
+            padding: 0;
+        }
+    }
+    
+    @media screen and (max-width:430px) {
+        .getin{
+            top:2750px;
+        }
+    }
+    
+    @media screen and (max-width:400px) {
+        .getin{
+            top:2850px;
+        }
+
     }
